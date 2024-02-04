@@ -1,0 +1,4 @@
+
+@mixin b($w:2px,$c:yellow,$s:dashed) {
+    border: $w $c $s;
+};

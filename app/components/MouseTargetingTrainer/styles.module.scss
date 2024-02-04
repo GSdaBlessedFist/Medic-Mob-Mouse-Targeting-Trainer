@@ -1,0 +1,42 @@
+@import "../../styles/mixins";
+
+//MouseTargetingTrainerContainer
+
+.container{
+    @apply mx-auto w-11/12 h-screen;
+    @include b(5px);
+}
+.layout{
+    @apply grid w-full;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 75px 75px 50px 700px;// <--trial n error
+    grid-template-areas: "header       header"
+                         "achievements achievements"
+                         "moduleIntro  moduleIntro"
+                         "description  details";
+}
+.header{
+    grid-area: header;
+    @apply text-orange-500 text-2xl;
+    @include b();
+}
+.achievements{
+    grid-area: achievements;
+    @include b();
+}
+.moduleIntro{
+    grid-area: moduleIntro;
+    @include b();
+}
+.moduleIntro{
+    grid-area: moduleIntro;    
+    @include b();
+}
+.description{
+    grid-area: description;
+    @include b();
+}
+.details{
+    grid-area: details;
+    @include b();
+}
