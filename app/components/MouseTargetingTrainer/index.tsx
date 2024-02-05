@@ -39,7 +39,7 @@ export default function MouseTargetingTrainer() {
           <div className="relative -left-1/4">Level-4 : "Panic sets in"</div>
         </div>
         <div className={styles.description}>
-          <p>In many situations healers are swarmed with heads needing health.  Do your best to keep up once their panic kicks in.</p>
+          <p>In many situations healers are swarmed with heads needing health ASAP.  Do your best to keep up once their panic kicks in.</p>
         </div>
         <div className={styles.details}>details</div>
       </div>

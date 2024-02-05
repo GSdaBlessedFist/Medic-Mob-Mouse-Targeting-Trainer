@@ -11,13 +11,28 @@ export interface Path {
     };
  }
  
+ enum TargetSpeed {
+   MOZY = 'mozy',
+   MEDIUM = 'medium',
+   PANIC = 'panic',
+ }
+ 
+ // Use the enum in your interface
+ export interface Details {
+   focus: string;
+   target_speed: TargetSpeed;
+ }
+
  export  interface TrainingModule {
     level: number;
     name: string;
+    description: string;
+    details:Details;
     path: Path;
     number_of_targets: NumberOfTargets;
     target_diameter: number;
     targets_area: number;
     concentration_time: number;
+    speed: () => void;
  }
  

@@ -3,13 +3,13 @@
 //MouseTargetingTrainerContainer
 
 .container{
-    @apply mx-auto w-11/12 h-screen;
+    @apply absolute mx-auto  top-4 left-4 bottom-4 right-4;
     @include b(5px,5);
 }
 .layout{
     @apply grid w-full;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 75px 1fr 1fr 1fr;// <--trial n error
+    grid-template-rows: 75px 75px 75px 1fr;// <--trial n error
     grid-template-areas: "header       header"
                          "achievements achievements"
                          "moduleIntro  moduleIntro"
@@ -17,7 +17,7 @@
 }
 .header{
     grid-area: header;
-    @apply flex justify-center items-center text-orange-500 text-2xl;
+    @apply flex justify-center items-center text-orange-500 text-3xl;
     @include b();
 }
 .achievements{
@@ -35,7 +35,7 @@
 }
 .moduleIntro{
     grid-area: moduleIntro;
-    @apply flex justify-center items-center  py-8 text-2xl;
+    @apply flex justify-center items-center  py-0 text-2xl;
     @include b();
 }
 .moduleIntro{
@@ -44,8 +44,9 @@
 }
 .description{
     grid-area: description;
-    @apply relative bottom-0 m-8 text-xl;
-    @include b();
+    @apply relative bottom-0 m-4 p-4 text-2xl ;
+    text-indent: 2em;
+    @include b($s: solid);
 }
 .details{
     grid-area: details;
