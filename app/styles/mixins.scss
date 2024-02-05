@@ -1,4 +1,4 @@
 
-@mixin b($w:2px,$c:yellow,$s:dashed) {
-    border: $w $c $s;
+@mixin b($w:2px,$c:60,$s:dashed) {
+    border: $w hsla($c,50%,50%,.5) $s;
 };

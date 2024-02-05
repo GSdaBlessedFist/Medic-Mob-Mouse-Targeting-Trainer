@@ -9,7 +9,7 @@ const SOURCE = "UserInfoProvider";
 const srcColor = 25;
 
 export function UserInfoProvider({children}){
-    const [userName,setUserName] = useState("Siegfried");
+    const [userName,setUserName] = useState("Siegfry");
 
 
     useEffect(() => {
