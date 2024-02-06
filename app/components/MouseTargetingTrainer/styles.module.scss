@@ -50,5 +50,6 @@
 }
 .details{
     grid-area: details;
+    @apply relative bottom-0 m-4 p-4 text-2xl ;
     @include b();
 }

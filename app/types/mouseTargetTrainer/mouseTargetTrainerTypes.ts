@@ -11,7 +11,7 @@ export interface Path {
     };
  }
  
- enum TargetSpeed {
+ export enum TargetSpeed {
    MOZY = 'mozy',
    MEDIUM = 'medium',
    PANIC = 'panic',
@@ -30,8 +30,8 @@ export interface Path {
     details:Details;
     path: Path;
     number_of_targets: NumberOfTargets;
-    target_diameter: number;
-    targets_area: number;
+    target_diameter: string;
+    targets_area: string;
     concentration_time: number;
     speed: () => void;
  }
