@@ -5,7 +5,7 @@ import {TrainingModule} from "@/app/types/mouseTargetTrainer/mouseTargetTrainerT
 
 function Details({ module }: { module: TrainingModule | null}) {
     if (!module) {
-        return <div>No module selected</div>;
+        return <div>Welcome</div>;
       }
     const { level, name, description, details, path, number_of_targets, target_diameter, targets_area, concentration_time, speed } = module;
     return (

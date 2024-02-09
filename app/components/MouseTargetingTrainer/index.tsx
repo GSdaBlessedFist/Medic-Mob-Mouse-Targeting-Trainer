@@ -50,7 +50,7 @@ export default function MouseTargetingTrainer() {
         ))}
         </div>
         <div className={styles.moduleIntro}>
-          <div className="relative -left-1/4">{activeModule?.name}</div>
+          <div className="relative px-20">"{activeModule?.name}"</div>
         </div>
         <div className={styles.description}>
           <p>{activeModule?.description}</p>

@@ -35,7 +35,7 @@
 }
 .moduleIntro{
     grid-area: moduleIntro;
-    @apply flex justify-center items-center  py-0 text-2xl;
+    @apply flex justify-start items-center  py-0 text-2xl;
     @include b();
 }
 .moduleIntro{
